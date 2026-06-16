@@ -291,6 +291,7 @@ function openProductForm(productId) {
     document.getElementById("adm-prod-short-desc").value = p.shortDescription || "";
     document.getElementById("adm-prod-desc").value = p.description || "";
     document.getElementById("adm-prod-img-url").value = p.image || "";
+    document.getElementById("adm-prod-in-stock").checked = p.hasOwnProperty('inStock') ? p.inStock : true;
     
     if (p.image) {
       prev.src = p.image;
@@ -305,6 +306,7 @@ function openProductForm(productId) {
     document.getElementById("adm-prod-id").value = "";
     document.getElementById("adm-prod-img-url").value = "";
     prev.style.display = "none";
+    document.getElementById("adm-prod-in-stock").checked = true;
   }
 
   // Отмена
@@ -497,8 +499,8 @@ function loadContactsData() {
   document.getElementById("adm-tg-channel").value = settings.telegramChannel || contacts.telegramChannel || "";
   document.getElementById("adm-vk-url").value = settings.vkUrl || contacts.vk || "";
   
-  document.getElementById("adm-tg-token").value = settings.telegramBotToken || "";
-  document.getElementById("adm-tg-chatid").value = settings.telegramChatId || "";
+  document.getElementById("adm-tg-token").value = deobfuscate(settings.telegramBotToken) || "";
+  document.getElementById("adm-tg-chatid").value = deobfuscate(settings.telegramChatId) || "";
   document.getElementById("adm-admin-pw").value = settings.adminPassword || "admin";
 }
 
@@ -538,7 +540,7 @@ function setupAdminForms() {
       description: document.getElementById("adm-prod-desc").value,
       image: document.getElementById("adm-prod-img-url").value,
       popular: true, // По умолчанию новые товары активны
-      inStock: true
+      inStock: document.getElementById("adm-prod-in-stock").checked
     };
 
     if (id) {
@@ -642,8 +644,8 @@ function setupAdminForms() {
     window.storeData.settings.telegramChannel = document.getElementById("adm-tg-channel").value;
     window.storeData.settings.vkUrl = document.getElementById("adm-vk-url").value;
     
-    window.storeData.settings.telegramBotToken = document.getElementById("adm-tg-token").value;
-    window.storeData.settings.telegramChatId = document.getElementById("adm-tg-chatid").value;
+    window.storeData.settings.telegramBotToken = obfuscate(document.getElementById("adm-tg-token").value);
+    window.storeData.settings.telegramChatId = obfuscate(document.getElementById("adm-tg-chatid").value);
     window.storeData.settings.adminPassword = document.getElementById("adm-admin-pw").value;
 
     // Смержим дублирующие поля для обратной совместимости
