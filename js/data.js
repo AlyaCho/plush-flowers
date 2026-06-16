@@ -5,8 +5,8 @@
 window.DEFAULT_STORE_DATA = {
   "settings": {
     "adminPassword": "admin",
-    "telegramBotToken": "obf:WXkyOEdQT0NlUGd3Z0E4dmhYN1Yxa2h0VXo5V2JYVXZHQUE6NDMwMTk0MzA5OA==",
-    "telegramChatId": "obf:ODM3MDcwNDYzMQ==",
+    "telegramBotToken": "8903491034:AAGvUXbW9zUthk1V7Xhv8AgwgPeCOPG82yY",
+    "telegramChatId": "1364070738",
     "telegramUsername": "Plush_flowers_bot",
     "telegramChannel": "plu_flo",
     "vkUrl": "https://vk.ru/ty_cho",
@@ -53,10 +53,6 @@ window.DEFAULT_STORE_DATA = {
     {
       "id": "compositions",
       "name": "Авторские композиции"
-    },
-    {
-      "id": "cat_1781628090787",
-      "name": "Мини-букеты"
     }
   ],
   "products": [
@@ -65,8 +61,7 @@ window.DEFAULT_STORE_DATA = {
       "name": "Букет нежных бело-розовых лилий",
       "price": 800,
       "category": [
-        "lilies",
-        "cat_1781628090787"
+        "lilies"
       ],
       "shortDescription": "Воздушный букет из пушистой синельной проволоки в нежно-розовой упаковке.",
       "description": "Наш главный шедевр и символ бренда. Букет состоит из трех роскошных раскрытых лилий бело-розового оттенка, дополненных изящными веточками маленьких цветочков и зелеными листьями. Упакован в воздушную матовую бумагу нежно-розового цвета и перевязан шелковой лентой. Букет выглядит невероятно объемно, нежно и дорого - идеальный подарок для ценителей эстетики Pinterest.",
@@ -134,7 +129,7 @@ window.DEFAULT_STORE_DATA = {
   ],
   "reviews": [],
   "contacts": {
-    "phone": "",
+    "phone": "+7 (999) 123-45-67",
     "email": "alinapavlova017@gmail.com",
     "address": "м. Ломоносовская",
     "telegram": "Plush_flowers_bot",
