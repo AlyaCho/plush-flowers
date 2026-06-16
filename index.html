@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plush Flowers | Авторские букеты из синельной проволоки ручной работы</title>
+  <meta name="description" content="Нежные и премиальные декоративные букеты из пушистой синельной проволоки ручной работы. Купить цветы, которые останутся с вами навсегда. Доставка по всей России. Индивидуальный заказ.">
+  <meta name="keywords" content="синельная проволока, букеты из синельной проволоки, цветы ручной работы, вечные цветы, оригинальный подарок, цветы спб, подарки пинтерест">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Decorative Bubbles -->
+  <div class="decor-bubble bubble-1"></div>
+  <div class="decor-bubble bubble-2"></div>
+
+  <!-- Header & Navigation -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="logo" id="logo-link">
+          Plush <span>Flowers</span>
+        </a>
+        
+        <nav>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#" class="nav-link active" data-section="hero">Главная</a></li>
+            <li><a href="#catalog" class="nav-link" data-section="catalog">Каталог</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">О нас</a></li>
+            <li><a href="#custom-order" class="nav-link" data-section="custom-order">Индивидуальный заказ</a></li>
+            <li><a href="#shipping" class="nav-link" data-section="shipping">Доставка и оплата</a></li>
+            <li><a href="#contacts" class="nav-link" data-section="contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        
+        <div class="nav-actions">
+          <button class="action-btn" id="favorites-toggle-btn" title="Избранное">
+            <i data-lucide="heart"></i>
+            <span class="action-badge" id="favorites-badge">0</span>
+          </button>
+          <button class="action-btn" id="cart-toggle-btn" title="Корзина">
+            <i data-lucide="shopping-bag"></i>
+            <span class="action-badge" id="cart-badge">0</span>
+          </button>
+          
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Website Sections -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-subtitle" id="banner-subtitle-badge">Boutique de Cadeaux</span>
+            <h1 class="hero-title" id="banner-title">Букеты из синельной проволоки, созданные с любовью</h1>
+            <p class="hero-description" id="banner-subtitle">Нежные цветы ручной работы, которые останутся с вами навсегда</p>
+            <div class="hero-buttons">
+              <a href="#catalog" class="btn btn-primary" id="banner-btn-text">Смотреть каталог</a>
+              <a href="#about" class="btn btn-secondary">Наша история</a>
+            </div>
+          </div>
+          <div class="hero-img-container">
+            <img src="img/bouquet_pink_lilies.png" alt="Нежный букет лилий из синельной проволоки" class="hero-image" id="banner-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="section-padding" id="catalog">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Каталог букетов</h2>
+          <p class="section-subtitle">Выберите свой идеальный букет</p>
+        </div>
+        
+        <div class="catalog-controls">
+          <!-- Category Pills -->
+          <div class="category-tabs" id="category-tabs">
+            <!-- Dynamic Category Buttons render here -->
+          </div>
+          
+          <!-- Search and Filters -->
+          <div class="catalog-search-filter">
+            <div class="search-box">
+              <i data-lucide="search" class="search-icon"></i>
+              <input type="text" placeholder="Поиск по названию..." class="search-input" id="search-input">
+            </div>
+            
+            <div class="filter-group">
+              <select class="filter-select" id="sort-select">
+                <option value="default">Сортировка: По умолчанию</option>
+                <option value="price-asc">Сначала дешевые</option>
+                <option value="price-desc">Сначала дорогие</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Dynamic Product Cards render here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section-padding about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img-group">
+            <div class="about-img-wrapper">
+              <img src="img/bouquet_blue_lavender.png" alt="Процесс создания цветов">
+            </div>
+            <div class="about-img-wrapper offset-y">
+              <img src="img/bouquet_peach_baskets.png" alt="Красивые детали букета">
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <span class="hero-subtitle">О бренде</span>
+            <h2 class="section-title" id="about-title" style="margin-bottom: 24px;">Искусство нежности в каждой детали</h2>
+            <p class="about-text" id="about-text-1">
+              Добро пожаловать в Plush Flowers — студию авторских букетов из пушистой синельной проволоки ручной работы.
+              Синельная проволока — это мягкий, ворсистый и податливый материал, который в руках мастера превращается в изысканные цветы, невероятно похожие на живые растения.
+            </p>
+            <p class="about-text" id="about-text-2">
+              Каждая деталь нашего букета создается вручную с особым трепетом и вниманием к мелочам. Мы находимся в Санкт-Петербурге и кропотливо формируем каждый лепесток,
+              подбираем гармоничные цветовые переходы, создаем стебли и оформляем композиции в премиальную дизайнерскую упаковку.
+              Наша цель — подарить вам частичку уюта, тепла и эстетики, которая украсит любой интерьер.
+            </p>
+            
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon-box"><i data-lucide="sparkles"></i></div>
+                <div>
+                  <h4 class="feature-title" id="feature-title-1">100% Ручная работа</h4>
+                  <p class="feature-desc" id="feature-desc-1">Каждый лепесток сгибается и прорабатывается вручную. Каждое изделие уникально.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon-box"><i data-lucide="heart"></i></div>
+                <div>
+                  <h4 class="feature-title" id="feature-title-2">Вечная красота</h4>
+                  <p class="feature-desc" id="feature-desc-2">Эти цветы никогда не завянут, не требуют полива и будут радовать глаз долгие годы.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon-box"><i data-lucide="palette"></i></div>
+                <div>
+                  <h4 class="feature-title" id="feature-title-3">Индивидуальный заказ</h4>
+                  <p class="feature-desc" id="feature-desc-3">Мы можем собрать букет по вашей картине или описанию, изменив цвета, размер и форму.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Order Section -->
+    <section class="section-padding" id="custom-order">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Индивидуальный заказ</h2>
+          <p class="section-subtitle">Воплотим любую вашу идею</p>
+        </div>
+        
+        <div class="custom-order-wrapper">
+          <div class="custom-order-info">
+            <h3>Создайте свой уникальный букет</h3>
+            <p>Хотите букет другого цвета, размера или состава? Мечтаете о необычной композиции, например, в виде персонажей из мультфильмов, игр или особого декора? Мы с радостью разработаем для вас индивидуальный дизайн!</p>
+            
+            <ul class="custom-steps">
+              <li><span>1</span> Заполните форму заявки справа</li>
+              <li><span>2</span> Прикрепите фото-пример (если есть)</li>
+              <li><span>3</span> Мы свяжемся с вами в Telegram или ВКонтакте</li>
+              <li><span>4</span> Согласуем детали, материалы и сроки</li>
+              <li><span>5</span> Соберем букет и пришлем фото готовой работы</li>
+            </ul>
+          </div>
+          
+          <form class="custom-order-form" id="custom-order-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="custom-name">Ваше имя *</label>
+                <input type="text" id="custom-name" class="form-input" placeholder="Иван" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="custom-phone">Телефон *</label>
+                <input type="tel" id="custom-phone" class="form-input" placeholder="+7 (999) 000-00-00" required>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="custom-telegram">Ник в Telegram *</label>
+                <input type="text" id="custom-telegram" class="form-input" placeholder="@username" required>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="custom-wishes">Ваши пожелания к букету *</label>
+                <textarea id="custom-wishes" rows="4" class="form-textarea" placeholder="Опишите желаемую цветовую гамму, размер, тип цветов или прикрепите описание идеи..." required></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Прикрепить фото-пример</label>
+                <label class="form-file-upload" for="custom-photo">
+                  <i data-lucide="image"></i>
+                  <span class="file-name" id="custom-file-label">Выбрать файл (.jpg, .png)</span>
+                  <input type="file" id="custom-photo" accept="image/*" style="display: none;">
+                </label>
+                <img id="custom-photo-preview" src="#" alt="Предпросмотр фото" class="file-preview">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding" id="gallery">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Галерея работ</h2>
+          <p class="section-subtitle">Наши готовые работы и вдохновение</p>
+        </div>
+        
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Dynamic Gallery Items render here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="section-padding reviews" id="reviews">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Отзывы покупателей</h2>
+          <p class="section-subtitle">С любовью от наших клиентов</p>
+        </div>
+        
+        <div class="reviews-grid" id="reviews-grid">
+          <!-- Dynamic Reviews Card render here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping & Payment Section -->
+    <section class="section-padding" id="shipping">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title" id="shipping-title-main">Доставка и оплата</h2>
+          <p class="section-subtitle">Простые и понятные условия</p>
+        </div>
+        
+        <div class="sp-grid">
+          <div class="sp-card">
+            <h3><span><i data-lucide="truck"></i></span>Доставка</h3>
+            <div class="sp-list">
+              <div class="sp-item">
+                <div class="sp-icon-box"><i data-lucide="clock"></i></div>
+                <div class="sp-details">
+                  <h4>Сроки изготовления</h4>
+                  <p id="shipping-time">Сроки изготовления: обычно от 1 до 3 дней в зависимости от объема и сложности композиции. Срочные заказы оговариваются индивидуально.</p>
+                </div>
+              </div>
+              <div class="sp-item">
+                <div class="sp-icon-box"><i data-lucide="map-pin"></i></div>
+                <div class="sp-details">
+                  <h4>Способы доставки</h4>
+                  <p id="shipping-methods">Доставка по городу курьером или самовывоз. В другие регионы отправляем через СДЭК, Boxberry или Почту России с надежной упаковкой.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sp-card">
+            <h3><span><i data-lucide="credit-card"></i></span>Оплата</h3>
+            <div class="sp-list">
+              <div class="sp-item">
+                <div class="sp-icon-box"><i data-lucide="wallet"></i></div>
+                <div class="sp-details">
+                  <h4>Способы оплаты</h4>
+                  <p id="payment-methods">Оплата производится переводом на карту (СБП) при подтверждении заказа. После оформления заказа мы свяжемся с вами в Telegram или по телефону для согласования деталей.</p>
+                </div>
+              </div>
+              <div class="sp-item">
+                <div class="sp-icon-box"><i data-lucide="shield-check"></i></div>
+                <div class="sp-details">
+                  <h4>Безопасность заказа</h4>
+                  <p>Мы приступаем к сборке букета после предоплаты 50%. Перед отправкой высылаем подробные фото и видео готового изделия, чтобы вы убедились в идеальном качестве.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts & Feedback Section -->
+    <section class="section-padding contacts" id="contacts">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Контакты</h2>
+          <p class="section-subtitle">Мы всегда на связи</p>
+        </div>
+        
+        <div class="contacts-grid">
+          <div class="contacts-info">
+            <div class="contact-card">
+              <div class="contact-icon-box"><i data-lucide="phone"></i></div>
+              <div>
+                <div class="contact-title">Телефон</div>
+                <div class="contact-val" id="contact-phone">+7 (999) 123-45-67</div>
+              </div>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+              <div>
+                <div class="contact-title">Email</div>
+                <div class="contact-val" id="contact-email">alinapavlova017@gmail.com</div>
+              </div>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+              <div>
+                <div class="contact-title">Где забрать букет</div>
+                <div class="contact-val" id="contact-address">г. Санкт-Петербург (самовывоз по договоренности, пишите в мессенджеры)</div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="contact-title" style="margin-bottom: 12px;">Мы в соцсетях и мессенджерах</div>
+              <div class="social-links" style="flex-wrap: wrap; gap: 8px;">
+                <a href="https://t.me/Plush_flowers_bot" target="_blank" class="social-btn telegram" id="contact-tg-btn">
+                  <i data-lucide="send"></i> Telegram бот
+                </a>
+                <a href="https://t.me/plu_flo" target="_blank" class="social-btn telegram" id="contact-channel-btn" style="color: #0088cc; border-color: var(--color-border);">
+                  <i data-lucide="bell"></i> Telegram канал
+                </a>
+                <a href="https://vk.ru/ty_ch0" target="_blank" class="social-btn vk" id="contact-vk-btn">
+                  <i data-lucide="link-2"></i> ВКонтакте
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="feedback-form-box">
+            <h3>Напишите нам</h3>
+            <form id="feedback-form">
+              <div class="form-group" style="margin-bottom: 16px;">
+                <label class="form-label" for="feed-name">Ваше имя</label>
+                <input type="text" id="feed-name" class="form-input" placeholder="Анна" required>
+              </div>
+              <div class="form-group" style="margin-bottom: 16px;">
+                <label class="form-label" for="feed-contact">Телефон или Telegram</label>
+                <input type="text" id="feed-contact" class="form-input" placeholder="+7 (999) 000-00-00 или @username" required>
+              </div>
+              <div class="form-group" style="margin-bottom: 20px;">
+                <label class="form-label" for="feed-message">Сообщение</label>
+                <textarea id="feed-message" rows="4" class="form-textarea" placeholder="Ваш вопрос или пожелание..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить сообщение</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff;">Plush Flowers</h4>
+          <p>Создаем эстетичные, пушистые и нежные букеты из синельной проволоки ручной работы. Дарим радость, которая останется с вами навсегда.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#custom-order">Индивидуальный заказ</a></li>
+            <li><a href="#shipping">Доставка и оплата</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Бутик подарков</h4>
+          <p>Все изделия изготавливаются вручную по индивидуальному дизайну. Идеальный подарок на любой праздник.</p>
+          <p>Сделано с любовью 🌸</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>&copy; 2026 Plush Flowers. Все права защищены.</div>
+        <div>
+          <!-- Settings gear icon triggers Admin Panel Modal -->
+          <button id="admin-trigger-btn" class="admin-trigger" title="Панель управления">
+            <i data-lucide="settings"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Side Drawer -->
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Ваша корзина</h3>
+      <button class="cart-close" id="cart-close-btn"><i data-lucide="x"></i></button>
+    </div>
+    
+    <div class="cart-items" id="cart-items-container">
+      <!-- Dynamic Cart Items render here -->
+    </div>
+    
+    <div class="cart-footer" id="cart-footer-section">
+      <div class="cart-summary">
+        <span>Итого:</span>
+        <span id="cart-total-price">0 ₽</span>
+      </div>
+      
+      <!-- Cart Drawer Action Buttons -->
+      <div id="cart-initial-actions">
+        <button class="btn btn-primary" style="width: 100%; margin-bottom: 12px;" id="start-checkout-btn">Быстрое оформление</button>
+      </div>
+      
+      <!-- Checkout Form inside Cart -->
+      <div class="checkout-box" id="checkout-box">
+        <h4 class="checkout-title">Данные для заказа</h4>
+        <form id="checkout-form">
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label class="form-label" for="order-name">Имя *</label>
+            <input type="text" id="order-name" class="form-input" style="padding: 10px 14px;" placeholder="Иван" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label class="form-label" for="order-phone">Телефон *</label>
+            <input type="tel" id="order-phone" class="form-input" style="padding: 10px 14px;" placeholder="+7 (999) 000-00-00" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label class="form-label" for="order-telegram">Ник в Telegram / Ссылка *</label>
+            <input type="text" id="order-telegram" class="form-input" style="padding: 10px 14px;" placeholder="@username" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label class="form-label" for="order-address">Адрес доставки / Самовывоз *</label>
+            <input type="text" id="order-address" class="form-input" style="padding: 10px 14px;" placeholder="Курьер по СПб, самовывоз в СПб или доставка СДЭК..." required>
+          </div>
+          
+          <div style="display: flex; gap: 8px;">
+            <button type="button" class="btn btn-secondary" style="flex: 1; padding: 10px;" id="cancel-checkout-btn">Назад</button>
+            <button type="submit" class="btn btn-primary" style="flex: 2; padding: 10px;" id="submit-order-btn">Заказать в Telegram</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Details Quick View Modal -->
+  <div class="modal" id="product-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="product-modal-close-btn"><i data-lucide="x"></i></button>
+      
+      <div class="modal-grid">
+        <div class="modal-img-wrapper">
+          <img src="img/bouquet_pink_lilies.png" alt="Товар в модальном окне" class="modal-img" id="modal-product-image">
+        </div>
+        
+        <div class="modal-details">
+          <h3 class="modal-title" id="modal-product-title">Название товара</h3>
+          <div class="modal-price" id="modal-product-price">0 ₽</div>
+          <p class="modal-desc" id="modal-product-desc">Полное описание товара будет находиться здесь.</p>
+          
+          <div class="modal-meta">
+            <span>Категория: <strong id="modal-product-category">Лилии</strong></span>
+            <span>Материал: <strong>Премиальная синельная проволока, дизайнерская упаковка</strong></span>
+            <span>Наличие: <strong style="color: #27ae60;" id="modal-product-stock">В наличии (изготовление 1-3 дня)</strong></span>
+          </div>
+          
+          <div class="modal-actions">
+            <div class="quantity-selector">
+              <button class="qty-btn" id="modal-qty-minus">-</button>
+              <div class="qty-val" id="modal-qty-value">1</div>
+              <button class="qty-btn" id="modal-qty-plus">+</button>
+            </div>
+            <button class="btn btn-primary" style="flex-grow: 1;" id="modal-add-to-cart-btn">В корзину</button>
+            <button class="action-btn" style="border: 1px solid var(--color-border); width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;" id="modal-fav-btn">
+              <i data-lucide="heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Modal (Login + Panel) -->
+  <div class="admin-modal" id="admin-modal">
+    
+    <!-- Login Screen -->
+    <div class="admin-login" id="admin-login-screen">
+      <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 16px;">Вход в управление</h3>
+      <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 24px;">Введите пароль для доступа к редактированию контента</p>
+      
+      <form id="admin-login-form">
+        <div class="admin-form-group" style="margin-bottom: 20px;">
+          <input type="password" id="admin-password-input" class="admin-input" style="text-align: center;" placeholder="Пароль" required>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn btn-secondary" style="flex: 1; padding: 10px;" id="admin-login-cancel">Отмена</button>
+          <button type="submit" class="btn btn-primary" style="flex: 1; padding: 10px;">Войти</button>
+        </div>
+      </form>
+    </div>
+    
+    <!-- Dashboard Panel Screen -->
+    <div class="admin-panel" id="admin-panel-screen">
+      <div class="admin-header">
+        <h3><i data-lucide="settings"></i> Панель управления магазином</h3>
+        <button class="modal-close" style="position: static; width: 36px; height: 36px;" id="admin-panel-close-btn"><i data-lucide="x"></i></button>
+      </div>
+      
+      <div class="admin-body">
+        <!-- Sidebar Navigation Tabs -->
+        <div class="admin-sidebar">
+          <button class="admin-tab-btn active" data-tab="tab-banner">Главный баннер</button>
+          <button class="admin-tab-btn" data-tab="tab-products">Товары</button>
+          <button class="admin-tab-btn" data-tab="tab-categories">Категории</button>
+          <button class="admin-tab-btn" data-tab="tab-texts">Тексты на страницах</button>
+          <button class="admin-tab-btn" data-tab="tab-reviews">Отзывы</button>
+          <button class="admin-tab-btn" data-tab="tab-contacts">Контакты</button>
+          <button class="admin-tab-btn" data-tab="tab-export" style="margin-top: auto; border-top: 1px solid var(--color-border); background-color: var(--color-pink-light); color: var(--color-text-dark);">Сохранить сайт</button>
+        </div>
+        
+        <!-- Tab Panels -->
+        <div class="admin-content">
+          
+          <!-- TAB: BANNER -->
+          <div class="admin-tab-panel active" id="tab-banner">
+            <h4 class="admin-panel-title">Редактирование главного баннера</h4>
+            <form id="admin-form-banner">
+              <div class="admin-form-group">
+                <label class="form-label">Заголовок баннера</label>
+                <input type="text" id="adm-banner-title" class="admin-input">
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Подзаголовок баннера</label>
+                <textarea id="adm-banner-subtitle" rows="3" class="admin-textarea"></textarea>
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Текст на кнопке</label>
+                <input type="text" id="adm-banner-btn" class="admin-input">
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Фотография баннера</label>
+                <div class="admin-file-box" id="adm-banner-file-box">
+                  <i data-lucide="upload-cloud"></i> Загрузить фото с устройства
+                  <input type="file" id="adm-banner-file" accept="image/*" style="display:none;">
+                </div>
+                <img id="adm-banner-preview" class="admin-image-preview" src="#" alt="Превью">
+                <input type="hidden" id="adm-banner-img-url">
+              </div>
+              <button type="submit" class="btn btn-primary">Сохранить баннер</button>
+            </form>
+          </div>
+          
+          <!-- TAB: PRODUCTS -->
+          <div class="admin-tab-panel" id="tab-products">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; border-bottom: 1px solid var(--color-border); padding-bottom: 8px;">
+              <h4 class="admin-panel-title" style="border: none; margin: 0;">Управление товарами</h4>
+              <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" id="adm-add-product-btn">+ Новый товар</button>
+            </div>
+            
+            <!-- Products List (Default state) -->
+            <div id="adm-products-list-view">
+              <div id="adm-products-list-container">
+                <!-- Dynamically listed products -->
+              </div>
+            </div>
+            
+            <!-- Add/Edit Product Form (Hidden by default) -->
+            <div id="adm-product-form-view" style="display: none;">
+              <h5 id="adm-product-form-title" style="font-size: 1.2rem; margin-bottom: 20px; font-weight: 600;">Добавить товар</h5>
+              <form id="admin-form-product">
+                <input type="hidden" id="adm-prod-id">
+                
+                <div class="admin-form-group">
+                  <label class="form-label">Название товара *</label>
+                  <input type="text" id="adm-prod-name" class="admin-input" required>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="admin-form-group">
+                    <label class="form-label">Цена (руб) *</label>
+                    <input type="number" id="adm-prod-price" class="admin-input" required>
+                  </div>
+                </div>
+                
+                <div class="admin-form-group">
+                  <label class="form-label">Категории (выберите одну или несколько) *</label>
+                  <div id="adm-prod-categories-checkboxes" style="display: flex; flex-wrap: wrap; gap: 16px; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background-color: var(--color-bg-milk);">
+                    <!-- Checkboxes generated dynamically in admin.js -->
+                  </div>
+                </div>
+                
+                <div class="admin-form-group">
+                  <label class="form-label">Краткое описание (для карточки) *</label>
+                  <input type="text" id="adm-prod-short-desc" class="admin-input" required>
+                </div>
+                
+                <div class="admin-form-group">
+                  <label class="form-label">Полное описание (для модального окна) *</label>
+                  <textarea id="adm-prod-desc" rows="4" class="admin-textarea" required></textarea>
+                </div>
+                
+                <div class="admin-form-group">
+                  <label class="form-label">Изображение товара *</label>
+                  <div class="admin-file-box" id="adm-prod-file-box">
+                    <i data-lucide="upload-cloud"></i> Выбрать файл на компьютере/телефоне
+                    <input type="file" id="adm-prod-file" accept="image/*" style="display:none;">
+                  </div>
+                  <img id="adm-prod-preview" class="admin-image-preview" src="#" alt="Превью">
+                  <input type="hidden" id="adm-prod-img-url">
+                </div>
+                
+                <div style="display: flex; gap: 12px; margin-top: 24px;">
+                  <button type="button" class="btn btn-secondary" id="adm-prod-cancel-btn">Отмена</button>
+                  <button type="submit" class="btn btn-primary" id="adm-prod-save-btn">Сохранить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <!-- TAB: CATEGORIES -->
+          <div class="admin-tab-panel" id="tab-categories">
+            <h4 class="admin-panel-title">Управление категориями</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 20px;">Категории выводятся в фильтре каталога товаров.</p>
+            
+            <form id="admin-form-category" style="display: flex; gap: 12px; margin-bottom: 24px;">
+              <input type="text" id="adm-cat-name" class="admin-input" style="flex-grow: 1;" placeholder="Название новой категории (например, Ромашки)" required>
+              <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">+ Добавить</button>
+            </form>
+            
+            <div id="adm-categories-list-container">
+              <!-- Dynamically listed categories -->
+            </div>
+          </div>
+          
+          <!-- TAB: TEXTS -->
+          <div class="admin-tab-panel" id="tab-texts">
+            <h4 class="admin-panel-title">Редактирование текстов страниц</h4>
+            <form id="admin-form-texts">
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 20px 0 10px;">Блок «О нас»</h5>
+              <div class="admin-form-group">
+                <label class="form-label">Заголовок блока</label>
+                <input type="text" id="adm-about-title" class="admin-input">
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Первый абзац текста</label>
+                <textarea id="adm-about-text-1" rows="3" class="admin-textarea"></textarea>
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Второй абзац текста</label>
+                <textarea id="adm-about-text-2" rows="4" class="admin-textarea"></textarea>
+              </div>
+              
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 24px 0 10px;">Наши преимущества</h5>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius-md); margin-bottom: 16px;">
+                <div class="admin-form-group">
+                  <label class="form-label">Преимущество 1</label>
+                  <input type="text" id="adm-f1-title" class="admin-input">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Описание 1</label>
+                  <input type="text" id="adm-f1-desc" class="admin-input">
+                </div>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius-md); margin-bottom: 16px;">
+                <div class="admin-form-group">
+                  <label class="form-label">Преимущество 2</label>
+                  <input type="text" id="adm-f2-title" class="admin-input">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Описание 2</label>
+                  <input type="text" id="adm-f2-desc" class="admin-input">
+                </div>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius-md); margin-bottom: 24px;">
+                <div class="admin-form-group">
+                  <label class="form-label">Преимущество 3</label>
+                  <input type="text" id="adm-f3-title" class="admin-input">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Описание 3</label>
+                  <input type="text" id="adm-f3-desc" class="admin-input">
+                </div>
+              </div>
+              
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 24px 0 10px;">Блок «Доставка и оплата»</h5>
+              <div class="admin-form-group">
+                <label class="form-label">Сроки изготовления</label>
+                <textarea id="adm-ship-time" rows="2" class="admin-textarea"></textarea>
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Способы доставки</label>
+                <textarea id="adm-ship-methods" rows="2" class="admin-textarea"></textarea>
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Способы оплаты</label>
+                <textarea id="adm-pay-methods" rows="2" class="admin-textarea"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="margin-top: 16px;">Сохранить тексты</button>
+            </form>
+          </div>
+          
+          <!-- TAB: REVIEWS -->
+          <div class="admin-tab-panel" id="tab-reviews">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; border-bottom: 1px solid var(--color-border); padding-bottom: 8px;">
+              <h4 class="admin-panel-title" style="border: none; margin: 0;">Управление отзывами</h4>
+              <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem;" id="adm-add-review-btn">+ Новый отзыв</button>
+            </div>
+            
+            <!-- Reviews List View -->
+            <div id="adm-reviews-list-view">
+              <div id="adm-reviews-list-container">
+                <!-- Dynamic Reviews listed -->
+              </div>
+            </div>
+            
+            <!-- Add/Edit Review Form -->
+            <div id="adm-review-form-view" style="display: none;">
+              <h5 id="adm-review-form-title" style="font-size: 1.2rem; margin-bottom: 20px; font-weight: 600;">Добавить отзыв</h5>
+              <form id="admin-form-review">
+                <input type="hidden" id="adm-rev-id">
+                <div class="admin-form-group">
+                  <label class="form-label">Имя клиента *</label>
+                  <input type="text" id="adm-rev-name" class="admin-input" required>
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Оценка (1-5 звезд) *</label>
+                  <select id="adm-rev-rating" class="admin-select" required>
+                    <option value="5">5 звезд (Рекомендуется)</option>
+                    <option value="4">4 звезды</option>
+                    <option value="3">3 звезды</option>
+                    <option value="2">2 звезды</option>
+                    <option value="1">1 звезда</option>
+                  </select>
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Текст отзыва *</label>
+                  <textarea id="adm-rev-text" rows="4" class="admin-textarea" required></textarea>
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Аватарка клиента (необязательно)</label>
+                  <div class="admin-file-box" id="adm-rev-file-box">
+                    <i data-lucide="upload-cloud"></i> Выбрать фото лица
+                    <input type="file" id="adm-rev-file" accept="image/*" style="display:none;">
+                  </div>
+                  <img id="adm-rev-preview" class="admin-image-preview" src="#" alt="Превью">
+                  <input type="hidden" id="adm-rev-img-url">
+                </div>
+                <div style="display: flex; gap: 12px; margin-top: 24px;">
+                  <button type="button" class="btn btn-secondary" id="adm-rev-cancel-btn">Отмена</button>
+                  <button type="submit" class="btn btn-primary">Сохранить отзыв</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <!-- TAB: CONTACTS -->
+          <div class="admin-tab-panel" id="tab-contacts">
+            <h4 class="admin-panel-title">Настройки контактов и Telegram</h4>
+            <form id="admin-form-contacts">
+              
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 20px 0 10px;">Контактные данные</h5>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="admin-form-group">
+                  <label class="form-label">Телефон магазина</label>
+                  <input type="text" id="adm-phone" class="admin-input">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Email для связи</label>
+                  <input type="email" id="adm-email" class="admin-input">
+                </div>
+              </div>
+              <div class="admin-form-group">
+                <label class="form-label">Правила самовывоза (СПб)</label>
+                <input type="text" id="adm-address" class="admin-input">
+              </div>
+              
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 24px 0 10px;">Социальные сети</h5>
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+                <div class="admin-form-group">
+                  <label class="form-label">Бот в Telegram (без @)</label>
+                  <input type="text" id="adm-tg-user" class="admin-input" placeholder="Plush_flowers_bot">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Канал в Telegram (без @)</label>
+                  <input type="text" id="adm-tg-channel" class="admin-input" placeholder="plu_flo">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Ссылка на ВКонтакте</label>
+                  <input type="url" id="adm-vk-url" class="admin-input" placeholder="https://vk.ru/ty_ch0">
+                </div>
+              </div>
+              
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 24px 0 10px;">Уведомления в Telegram (Интеграция с Bot API)</h5>
+              <p style="color: var(--color-text-muted); font-size: 0.8rem; margin-bottom: 12px; line-height: 1.5;">
+                Если вы хотите мгновенно получать заказы прямо в свой Telegram, вы можете создать личного бота и указать его токены здесь:
+                <br>
+                1. Создайте бота через <strong>@BotFather</strong> в Telegram, чтобы получить <strong>Bot Token</strong>.
+                <br>
+                2. Запустите бота и узнайте свой ID чата через <strong>@userinfobot</strong>, скопировав число в <strong>Chat ID</strong>.
+                <br>
+                3. Если эти поля не заполнены, при покупке клиент будет перенаправлен на диалог с вашим ботом/вами с уже написанным текстом заказа.
+              </p>
+              <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius-md); background-color: var(--color-bg-soft);">
+                <div class="admin-form-group">
+                  <label class="form-label">Токен Telegram-бота (Bot Token)</label>
+                  <input type="password" id="adm-tg-token" class="admin-input" placeholder="123456789:ABCDefGhIJKlmNoPQRsT...">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label">Ваш ID чата (Chat ID)</label>
+                  <input type="text" id="adm-tg-chatid" class="admin-input" placeholder="987654321">
+                </div>
+              </div>
+              
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin: 24px 0 10px;">Безопасность панели управления</h5>
+              <div class="admin-form-group">
+                <label class="form-label">Пароль для входа в эту панель</label>
+                <input type="password" id="adm-admin-pw" class="admin-input">
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="margin-top: 16px;">Сохранить настройки</button>
+            </form>
+          </div>
+          
+          <!-- TAB: EXPORT -->
+          <div class="admin-tab-panel" id="tab-export">
+            <h4 class="admin-panel-title">Сохранить сайт навсегда</h4>
+            
+            <div style="background-color: #eef9f2; border: 1px solid #c2ebd0; border-radius: var(--radius-md); padding: 24px; color: #2e6b40; margin-bottom: 24px; line-height: 1.7;">
+              <h5 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;"><i data-lucide="check-circle-2"></i> Изменения применились локально!</h5>
+              <p>Все сделанные вами изменения (цены, товары, фото, тексты) сохранены в памяти вашего текущего браузера. Если вы перезагрузите страницу, они останутся на месте.</p>
+            </div>
+            
+            <div style="line-height: 1.7;">
+              <h5 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 12px;">Как применить изменения для всех посетителей?</h5>
+              <p style="margin-bottom: 16px; color: var(--color-text-muted);">
+                Чтобы покупатели увидели новые товары или измененные цены, вам нужно обновить файл данных на хостинге. Это делается за 3 простых шага:
+              </p>
+              
+              <ol style="margin-left: 20px; margin-bottom: 24px; display: flex; flex-direction: column; gap: 12px; color: var(--color-text-dark);">
+                <li>
+                  Нажмите на кнопку ниже **«Скачать файл данных (data.js)»**.
+                </li>
+                <li>
+                  В папку загрузок вашего телефона или компьютера скачается готовый файл `data.js`.
+                </li>
+                <li>
+                  Перейдите в папку с файлами вашего сайта (или в репозиторий GitHub/интерфейс хостинга) и замените старый файл `js/data.js` новым скачанным файлом.
+                </li>
+              </ol>
+              
+              <div style="background-color: var(--color-bg-soft); border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius-md); margin-bottom: 24px; font-size: 0.85rem; color: var(--color-text-muted);">
+                <strong>Важно:</strong> Не переименовывайте файл. Он должен называться именно <code>data.js</code> и лежать в подпапке <code>js/</code>, чтобы сайт работал правильно.
+              </div>
+              
+              <button class="btn btn-primary" id="adm-export-file-btn" style="width: 100%; display: flex; align-items: center; gap: 10px;">
+                <i data-lucide="download"></i> Скачать файл данных (data.js)
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Center -->
+  <div class="admin-toast" id="admin-toast">Успешно сохранено!</div>
+
+  <!-- JS Scripts -->
+  <!-- 1. Database Data File -->
+  <script src="js/data.js"></script>
+  
+  <!-- 2. Main Store Functions -->
+  <script src="js/app.js"></script>
+  
+  <!-- 3. Visual Admin Control Panel -->
+  <script src="js/admin.js"></script>
+</body>
+</html>
